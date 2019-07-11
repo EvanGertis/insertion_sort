@@ -12,7 +12,7 @@ public class Main {
             int newElement = intArray[firstUnsortedIndex];
 
             int i;
-            for(i = 0; i > 0 && intArray[i - 1] > newElement; i--){
+            for(i = firstUnsortedIndex; i > 0 && intArray[i - 1] > newElement; i--){
                 intArray[i] = intArray[i-1];
             }
 
